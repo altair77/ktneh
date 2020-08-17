@@ -2,9 +2,12 @@
   <div>
     <v-container>
       <table>
-        <tr><td rowspan="5">
+        <tr><td rowspan="6">
           <v-icon class="mr-1">mdi-cursor-default-click</v-icon>
         </td></tr>
+        <tr>
+          <td v-for="(wire, index) in wires" :key="index">{{index + 1}}</td>
+        </tr>
         <tr>
           <td v-for="(wire, index) in wires" :key="index">
             <v-btn
@@ -119,7 +122,6 @@ export default {
   data() {
     return {
       wires: [
-        {light: false, red: false, blue: false, star: false},
         {light: false, red: false, blue: false, star: false},
         {light: false, red: false, blue: false, star: false},
         {light: false, red: false, blue: false, star: false},
