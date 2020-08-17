@@ -154,7 +154,7 @@ export default {
         case 5:
           return '左下'
         case 6:
-          return '左上'
+          return '右下'
         default:
           return false
       }
