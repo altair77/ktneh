@@ -151,7 +151,8 @@ export default {
             || (!w.light && w.red && w.blue && w.star)) {
           return 'P'
         }
-        if (!w.light && !w.star && (w.red || w.blue)) {
+        if ((!w.light && !w.star && (w.red || w.blue))
+            || (w.light && w.red && w.blue && !w.star)) {
           return 'S'
         }
         if (w.light && !w.blue && (w.red || w.star)) {
