@@ -1,4 +1,8 @@
 # ktneh
+
+[![](https://img.shields.io/github/license/altair77/ktneh)](https://github.com/altair77/ktneh/blob/master/LICENSE)
+[![gh-pages](https://github.com/altair77/ktneh/workflows/gh-pages/badge.svg)](https://github.com/altair77/ktneh/actions?query=workflow:gh-pages)
+
 Keep Talking and Nobody Explodes Helper
 
 ## 概要
@@ -9,6 +13,8 @@ Keep Talking and Nobody Explodes Helper
 <https://altair77.github.io/ktneh>
 
 ## 機能
+
+* バージョン1-ja に対応しています。
 
 * 特殊モジュールを除く、全てのモジュールに対応しています。
   * ワイヤ
