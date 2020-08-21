@@ -1,5 +1,6 @@
 <template>
   <v-app dark>
+    <loading :loading="loading" />
     <additional-navi />
     <module-navi />
     <v-main>
@@ -10,6 +11,15 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      loading: true,
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.loading = false
+    })
+  },
 }
 </script>
