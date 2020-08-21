@@ -1,14 +1,17 @@
 import colors from 'vuetify/es5/util/colors'
 
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+const ghPagesConfig = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
     base: '/ktneh/'
-  }
+  },
+  head: {
+    link: [
+      { rel: 'icon', type: 'image/svg+xml', href: '/ktneh/favicon.svg' }
+    ],
+  },
 } : {}
 
 export default {
-  ...routerBase,
-
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -88,5 +91,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-  }
+  },
+
+  ...ghPagesConfig,
 }
